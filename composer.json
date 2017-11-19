@@ -1,8 +1,8 @@
 {
     "name": "mtrajano/laravel-validations",
     "description": "Common Laravel Validation Rules",
-    "keywords": ["laravel","validation","rules"],
-    "type": "library",
+    "keywords": ["laravel-validations", "laravel","validation","rules"],
+    "homepage": "https://github.com/mtrajano/laravel-validations",
     "license": "MIT",
     "authors": [
         {
@@ -19,6 +19,18 @@
         }
     },
     "require-dev": {
-        "phpunit/phpunit": "^6.4"
+        "orchestra/testbench": "~3.0"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mtrajano\\LaravelValidations\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mtrajano\\LaravelValidations\\LaravelValidationsServiceProvider"
+            ]
+        }
     }
 }

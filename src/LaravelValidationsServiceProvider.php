@@ -13,6 +13,7 @@ class LaravelValidationsServiceProvider extends ServiceProvider
     {
         foreach ([
             'uuid' => 'UUID',
+            'phone' => 'Phone',
             'zipcode' => 'ZipCode',
             'routing' => 'RoutingNumber',
             'latitude' => 'Latitude',
